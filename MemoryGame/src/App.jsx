@@ -7,7 +7,6 @@ function App() {
   const shuffledArr = shuffle(arr);
   const [clicked, setClicked] = useState([]);
   const [highscore, setHighscore] = useState(0);
-  const currentlyClicked = clicked;
 
   const handleClickEvent = (event) => {
     const val = event.target.className;
