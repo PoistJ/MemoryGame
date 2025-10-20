@@ -38,6 +38,14 @@ function App() {
           );
         })}
       </div>
+      <footer>
+        <div>Created by PoistJ</div>
+        <div className="links">
+          <a href="https://github.com/PoistJ/MemoryGame" target="_blank">
+            GitHub
+          </a>
+        </div>
+      </footer>
     </>
   );
 }
