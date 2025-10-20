@@ -36,7 +36,7 @@ function Card({ arrIndex, handleClick }) {
   }, [pokeID]);
 
   return (
-    <div key={arrIndex} id={arrIndex} onClick={handleClick}>
+    <div key={arrIndex} className={arrIndex} onClick={handleClick}>
       <img src={imgURL} className={arrIndex} />
       <div className={arrIndex}>
         {pokeName}

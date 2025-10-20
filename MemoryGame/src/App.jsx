@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/style.css";
 import { useState } from "react";
 import { Card } from "./components/components.jsx";
 
@@ -25,16 +25,19 @@ function App() {
   return (
     <>
       <header>
+        <div className="title">Poke Memory Cards</div>
         <div className="scoreboard">
           <div className="currentScore">Current score: {clicked.length}</div>
           <div className="highscore">Highscore: {highscore}</div>
         </div>
       </header>
-      {shuffledArr.map((value) => {
-        return (
-          <Card key={value} arrIndex={value} handleClick={handleClickEvent} />
-        );
-      })}
+      <div id="main">
+        {shuffledArr.map((value) => {
+          return (
+            <Card key={value} arrIndex={value} handleClick={handleClickEvent} />
+          );
+        })}
+      </div>
     </>
   );
 }
