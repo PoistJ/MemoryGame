@@ -8,7 +8,7 @@ function App() {
   const [clicked, setClicked] = useState([]);
   const [highscore, setHighscore] = useState(0);
 
-  const handleClickEvent = (event) => {
+  const handleClickEvent = (event) => { 
     const val = event.target.className;
 
     if (!clicked.find((id) => id === val)) {
